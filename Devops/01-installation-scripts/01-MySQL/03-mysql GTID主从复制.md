@@ -21,7 +21,7 @@ systemctl restart mysql
 
 ## 3、主服务器添加同步用户
 ```SQL
-grant replication slave on *.* to 'repl'@'172.20.222.%' identified by 'Re3#_pp111';
+grant replication slave on *.* to 'repl'@'192.168.1.%' identified by '12345678';
 show master status;
 ```
 
@@ -48,7 +48,7 @@ systemctl restart mysql
 
 ## 6、从服务器配置master信息
 ```SQL
-CHANGE MASTER TO MASTER_HOST='172.20.222.43',MASTER_USER='repl',MASTER_PASSWORD='Re3#_pp111',MASTER_AUTO_POSITION=1;
+CHANGE MASTER TO MASTER_HOST='192.168.1.2',MASTER_USER='repl',MASTER_PASSWORD='12345678',MASTER_AUTO_POSITION=1;
 start slave;
 show slave status\G
 ```

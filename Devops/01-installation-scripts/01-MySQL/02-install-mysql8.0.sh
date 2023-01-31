@@ -18,7 +18,7 @@ src_dir=$(pwd)/00src00
 # 端口
 PORT=3306
 # mysql部署好后，root的默认密码
-my_root_passwd=123456
+my_root_passwd=12345678
 # mysql版本
 mysql8_version=8.0.17
 

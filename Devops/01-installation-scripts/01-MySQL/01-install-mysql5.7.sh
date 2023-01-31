@@ -18,7 +18,7 @@ src_dir=$(pwd)/00src00
 # 端口
 PORT=3306
 # mysql部署好后，root的默认密码
-my_root_passwd=123456
+my_root_passwd=12345678
 # mysql版本
 mysql_version=5.7.36
 unit_file_name=mysqld.service
